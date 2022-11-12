@@ -1,0 +1,5 @@
+typer
+pymongo
+pydantic
+twint
+nest_asyncio
