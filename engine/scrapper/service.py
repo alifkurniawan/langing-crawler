@@ -47,7 +47,12 @@ def twint_scraper(keyword, since, city="indonesia", until=get_now(), collection_
         return False, "mongo_collection is required"
 
     output_name = get_tmp_file_path(collection_name)
-    print(keyword, since, city, until, output_name)
+    print("Crawling Info:")
+    print(f"Collection: {collection_name}")
+    print(f"keyword: {keyword}")
+    print(f"location: {city}")
+    print(f"since: {since}")
+
 
     # Basic Twint scraper configuration (see: https://github.com/twintproject/twint)
     c = twint.Config()
